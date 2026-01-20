@@ -1,0 +1,4 @@
+build/
+.vscode/
+partition_table.uf2
+.DS_Store
