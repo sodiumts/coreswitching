@@ -10,3 +10,8 @@ The other important part is to set up the two partitions where the code for each
 By setting ignored_during_arm_boot or ignored_during_riscv_boot on either of the partitions we make the bootloader ignore either partition when it reboots in a particular architecture, making the bootloader select the correct binary to execute.
 
 Does this have any use? I don't know. Was it fun to figure out? Obviously!
+## How to run
+1. Install the Pi Pico SDK visual studio code plugin.
+2. Compile both of the binaries in armside and riscside
+3. Using ``make_part.sh``, create and upload the partition .uf2 to the RP2350
+4. using ``build_upload.sh``, upload the two compiled .uf2 binaries to the RP2350 partitions
